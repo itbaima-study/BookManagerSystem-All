@@ -1,0 +1,18 @@
+spring:
+  mail:
+    host: smtp.163.com
+    username: example@163.com
+    password: yourpassword
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/book_manager
+    username: root
+    password: root
+  redis:
+    host: localhost
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+server:
+  port: 80

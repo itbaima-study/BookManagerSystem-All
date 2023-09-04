@@ -1,0 +1,1729 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zxx">
+<!--<![endif]-->
+<!-- Begin Head -->
+
+<head>
+    <title>SplashDash</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="MobileOptimized" content="320">
+    <!--Start Style -->
+    <link rel="stylesheet" type="text/css" href="static/css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/icofont.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+	<link rel="stylesheet" id="theme-change" type="text/css" href="">
+    <script src="static/js/api.js"></script>
+    <script src="static/js/jquery.min.js"></script>
+    <script>
+        initUserInfo()
+    </script>
+</head>
+
+<body>
+	<div class="loader">
+	  <div class="spinner">
+		<img src="static/picture/loader.gif" alt="">
+	  </div> 
+	</div>
+    <!-- Main Body -->
+    <div class="page-wrapper">
+        <!-- Header Start -->
+        <header class="header-wrapper main-header">
+            <div class="header-inner-wrapper">
+                <div class="logo-wrapper">
+                    <a href="" class="admin-logo">
+                        <img src="static/picture/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="header-right">
+                    <div class="serch-wrapper">
+                        <form>
+                            <input type="text" placeholder="Search Here...">
+                        </form>
+                        <a class="search-close" href="javascript:void(0);"><span class="icofont-close-line"></span></a>
+                    </div>
+                    <div class="header-left">
+                        <div class="header-links">
+                            <a href="javascript:void(0);" class="toggle-btn">
+                                <span></span>
+                            </a>
+                        </div>
+                        <div class="header-links search-link">
+                            <a class="search-toggle" href="javascript:void(0);">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve">
+                                    <path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23
+                                    s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92
+                                    c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17
+                                    s-17-7.626-17-17S14.61,6,23.984,6z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header-controls">
+                        <div class="setting-wrapper header-links">
+                            <a href="javascript:void(0);" class="setting-info">
+                                <span class="header-icon">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 16 16">
+                                        <path d="M7 0h2v3h-2v-3z"></path>
+                                        <path d="M6 4v3h1v9h2v-9h1v-3z"></path>
+                                        <path d="M2 0h2v8h-2v-8z"></path>
+                                        <path d="M1 9v3h1v4h2v-4h1v-3z"></path>
+                                        <path d="M12 0h2v10h-2v-10z"></path>
+                                        <path d="M11 11v3h1v2h2v-2h1v-3z"></path>
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="cart-wrapper header-links">
+                            <a href="javascript:void(0);" class="cart-info">
+                                <span class="header-icon">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512" xml:space="preserve">
+                                        <g>
+                                            <g>
+                                                <path d="M402.351,381.058h-203.32l-11.806-47.224h266.587L512,101.085H129.038L108.882,20.46H0v33.4h82.804l82.208,328.827
+                                                    c-24.053,5.971-41.938,27.737-41.938,53.611c0,30.461,24.781,55.242,55.241,55.242c30.459,0,55.241-24.781,55.241-55.242
+                                                    c0-7.755-1.613-15.138-4.511-21.841h122.577c-2.897,6.703-4.511,14.086-4.511,21.841c0,30.461,24.781,55.242,55.241,55.242
+                                                    c30.459,0,55.241-24.781,55.241-55.242C457.592,405.84,432.811,381.058,402.351,381.058z M287.029,300.434h-37.08l-8.284-66.275
+                                                    h45.365V300.434z M411.912,134.484h57.31l-16.568,66.275h-49.026L411.912,134.484z M399.453,234.16h44.85l-16.568,66.275h-36.566
+                                                    L399.453,234.16z M320.428,134.484h57.824l-8.284,66.275h-49.539V134.484z M320.428,234.159h45.365l-8.284,66.275h-37.08V234.159z
+                                                     M287.029,134.484v66.275h-49.539l-8.284-66.275H287.029z M137.388,134.484h58.158l8.284,66.275h-49.873L137.388,134.484z
+                                                     M162.307,234.159h45.699l8.284,66.275h-37.414L162.307,234.159z M178.315,458.141c-12.043,0-21.841-9.798-21.841-21.842
+                                                    c0-12.043,9.798-21.841,21.841-21.841s21.841,9.798,21.841,21.841C200.156,448.343,190.358,458.141,178.315,458.141z
+                                                     M402.351,458.141c-12.043,0-21.841-9.798-21.841-21.842c0-12.043,9.798-21.841,21.841-21.841
+                                                    c12.043,0,21.841,9.798,21.841,21.841C424.192,448.343,414.394,458.141,402.351,458.141z"></path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span class="item-count">03</span>
+                            </a>
+							<div class="of-notification-comment">
+								<div class="of-nt-text">
+									<h5>Shopping Cart</h5>
+									<h6>Your Have 3 Item In Your Cart</h6>
+								</div>
+								<div class="of-nt-scroll">
+								
+								<div class="of-nt-flex">
+									<div class="of-nt-img">
+										<img src="static/picture/product2.png" alt="">
+									</div>
+									<div class="of-nt-cmnt">
+										<p>Ceiling Light<span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="9px" height="8px">
+											<defs>
+											<filter>
+												<feflood flood-color="#222222" flood-opacity="1" result="floodOut"></feflood>
+												<fecomposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut"></fecomposite>
+												<feblend mode="normal" in="compOut" in2="SourceGraphic"></feblend>
+											</filter>
+
+											</defs>
+											<g>
+											<path fill-rule="evenodd" fill="#222222" d="M4.713,3.998 L7.864,0.850 C8.060,0.654 8.060,0.337 7.864,0.142 C7.668,-0.054 7.351,-0.054 7.155,0.142 L4.005,3.290 L0.854,0.142 C0.659,-0.054 0.342,-0.054 0.146,0.142 C-0.050,0.337 -0.050,0.654 0.146,0.850 L3.296,3.998 L0.146,7.146 C-0.050,7.341 -0.050,7.658 0.146,7.854 C0.244,7.952 0.372,8.001 0.500,8.001 C0.628,8.001 0.756,7.952 0.854,7.854 L4.005,4.706 L7.155,7.854 C7.253,7.952 7.381,8.001 7.510,8.001 C7.638,8.001 7.766,7.952 7.864,7.854 C8.060,7.658 8.060,7.341 7.864,7.146 L4.713,3.998 Z"></path>
+											</g>
+											</svg>
+										</span></p>
+										<div class="int-table-quantity">
+											<div class="quantity-wrapper">
+												<div class="quantity-qty">
+													<h5>$100</h5>
+												</div>
+												<div class="input-group">
+													<span class="quantity-minus"> - </span>
+													<input type="number" class="quantity" value="2">
+													<span class="quantity-plus"> + </span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="of-nt-flex">
+									<div class="of-nt-img">
+										<img src="static/picture/product3.png" alt="">
+									</div>
+									<div class="of-nt-cmnt">
+										<p>Wooden Sofa<span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="9px" height="8px">
+											<defs>
+											<filter>
+												<feflood flood-color="#222222" flood-opacity="1" result="floodOut"></feflood>
+												<fecomposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut"></fecomposite>
+												<feblend mode="normal" in="compOut" in2="SourceGraphic"></feblend>
+											</filter>
+
+											</defs>
+											<g>
+											<path fill-rule="evenodd" fill="#222222" d="M4.713,3.998 L7.864,0.850 C8.060,0.654 8.060,0.337 7.864,0.142 C7.668,-0.054 7.351,-0.054 7.155,0.142 L4.005,3.290 L0.854,0.142 C0.659,-0.054 0.342,-0.054 0.146,0.142 C-0.050,0.337 -0.050,0.654 0.146,0.850 L3.296,3.998 L0.146,7.146 C-0.050,7.341 -0.050,7.658 0.146,7.854 C0.244,7.952 0.372,8.001 0.500,8.001 C0.628,8.001 0.756,7.952 0.854,7.854 L4.005,4.706 L7.155,7.854 C7.253,7.952 7.381,8.001 7.510,8.001 C7.638,8.001 7.766,7.952 7.864,7.854 C8.060,7.658 8.060,7.341 7.864,7.146 L4.713,3.998 Z"></path>
+											</g>
+										</svg>
+										</span></p>
+										<div class="int-table-quantity">
+											<div class="quantity-wrapper">
+												<div class="quantity-qty">
+													<h5>$65</h5>
+												</div>
+												<div class="input-group">
+													<span class="quantity-minus"> - </span>
+													<input type="number" class="quantity" value="2">
+													<span class="quantity-plus"> + </span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="of-nt-flex">
+									<div class="of-nt-img">
+										<img src="static/picture/product.png" alt="">
+									</div>
+									<div class="of-nt-cmnt">
+										<p>Dining Chair<span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="9px" height="8px">
+											<defs>
+											<filter>
+												<feflood flood-color="#222222" flood-opacity="1" result="floodOut"></feflood>
+												<fecomposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut"></fecomposite>
+												<feblend mode="normal" in="compOut" in2="SourceGraphic"></feblend>
+											</filter>
+
+											</defs>
+											<g>
+											<path fill-rule="evenodd" fill="#222222" d="M4.713,3.998 L7.864,0.850 C8.060,0.654 8.060,0.337 7.864,0.142 C7.668,-0.054 7.351,-0.054 7.155,0.142 L4.005,3.290 L0.854,0.142 C0.659,-0.054 0.342,-0.054 0.146,0.142 C-0.050,0.337 -0.050,0.654 0.146,0.850 L3.296,3.998 L0.146,7.146 C-0.050,7.341 -0.050,7.658 0.146,7.854 C0.244,7.952 0.372,8.001 0.500,8.001 C0.628,8.001 0.756,7.952 0.854,7.854 L4.005,4.706 L7.155,7.854 C7.253,7.952 7.381,8.001 7.510,8.001 C7.638,8.001 7.766,7.952 7.864,7.854 C8.060,7.658 8.060,7.341 7.864,7.146 L4.713,3.998 Z"></path>
+											</g>
+											</svg>
+										</span></p>
+										<div class="int-table-quantity">
+											<div class="quantity-wrapper">
+												<div class="quantity-qty">
+													<h5>$86</h5>
+												</div>
+												<div class="input-group">
+													<span class="quantity-minus"> - </span>
+													<input type="number" class="quantity" value="2">
+													<span class="quantity-plus"> + </span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								</div>
+								<div class="int-flex-total">
+									<h4>Order Total - </h4>
+									<h5>$251</h5>
+								</div>
+								<div class="int-sop-cart-btn">
+									<a href="cart.html" class="ad-btn">View cart</a>
+									<a href="checkout.html" class="ad-btn">checkout</a>
+								</div>
+							</div>
+                        </div>
+
+                        <div class="notification-wrapper header-links">
+                            <a href="javascript:void(0);" class="notification-info">
+                                <span class="header-icon">
+                                    <svg enable-background="new 0 0 512 512" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m450.201 407.453c-1.505-.977-12.832-8.912-24.174-32.917-20.829-44.082-25.201-106.18-25.201-150.511 0-.193-.004-.384-.011-.576-.227-58.589-35.31-109.095-85.514-131.756v-34.657c0-31.45-25.544-57.036-56.942-57.036h-4.719c-31.398 0-56.942 25.586-56.942 57.036v34.655c-50.372 22.734-85.525 73.498-85.525 132.334 0 44.331-4.372 106.428-25.201 150.511-11.341 24.004-22.668 31.939-24.174 32.917-6.342 2.935-9.469 9.715-8.01 16.586 1.473 6.939 7.959 11.723 15.042 11.723h109.947c.614 42.141 35.008 76.238 77.223 76.238s76.609-34.097 77.223-76.238h109.947c7.082 0 13.569-4.784 15.042-11.723 1.457-6.871-1.669-13.652-8.011-16.586zm-223.502-350.417c0-14.881 12.086-26.987 26.942-26.987h4.719c14.856 0 26.942 12.106 26.942 26.987v24.917c-9.468-1.957-19.269-2.987-29.306-2.987-10.034 0-19.832 1.029-29.296 2.984v-24.914zm29.301 424.915c-25.673 0-46.614-20.617-47.223-46.188h94.445c-.608 25.57-21.549 46.188-47.222 46.188zm60.4-76.239c-.003 0-213.385 0-213.385 0 2.595-4.044 5.236-8.623 7.861-13.798 20.104-39.643 30.298-96.129 30.298-167.889 0-63.417 51.509-115.01 114.821-115.01s114.821 51.593 114.821 115.06c0 .185.003.369.01.553.057 71.472 10.25 127.755 30.298 167.286 2.625 5.176 5.267 9.754 7.861 13.798z"></path></svg>
+                                </span>
+                                <span class="count-notification"></span>
+                            </a>
+                            <div class="recent-notification">
+                                <div class="drop-down-header">
+                                    <h4>All Notification</h4>
+                                    <p>You have 6 new notifications</p>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <h5><i class="fas fa-exclamation-circle mr-2"></i>Storage Full</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetuer.</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <h5><i class="far fa-envelope mr-2"></i>New Membership</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetuer.</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="drop-down-footer">
+                                    <a href="javascript:void(0);" class="btn sm-btn">
+                                        View All
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user-info-wrapper header-links">
+                            <a href="javascript:void(0);" class="user-info">
+                                <img src="static/picture/user.jpg" alt="" class="user-img">
+                                <div class="blink-animation">
+                                    <span class="blink-circle"></span>
+                                    <span class="main-circle"></span>
+                                </div>
+                            </a>
+                            <div class="user-info-box">
+                                <div class="drop-down-header">
+                                    <h4 id="profile-name">John Brown</h4>
+                                    <p>UI | UX Designer</p>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="profile.html">
+                                            <i class="far fa-edit"></i> Edit Profile
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="setting.html">
+                                            <i class="fas fa-cog"></i> Settings
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:logout()">
+                                            <i class="fas fa-sign-out-alt"></i> logout
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Sidebar Start -->
+        <aside class="sidebar-wrapper">
+            <div class="side-menu-wrap">
+                <ul class="main-menu">
+                    <li>
+                        <a href="javascript:void(0);" class="active">
+                            <span class="icon-menu feather-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                            </span>
+                            <span class="menu-text">
+                                Dashboard
+                            </span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        Admin
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="user.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        User
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <a href="all-product.html">
+                            <span class="icon-menu feather-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-package"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                            </span>
+                            <span class="menu-text">
+                                Products
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="orders.html">
+                            <span class="icon-menu feather-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-truck"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+                            </span>
+                            <span class="menu-text">
+                                Orders
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="customers.html">
+                            <span class="icon-menu feather-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                            </span>
+                            <span class="menu-text">
+                                Customers
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="calendar.html">
+                            <span class="icon-menu feather-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                            </span>
+                            <span class="menu-text">
+                                Calendar
+                            </span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="fontawesome.html">
+                            <span class="icon-menu feather-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-grid nav-icon"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                            </span>
+                            <span class="menu-text">
+                                Font Awesome
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <span class="icon-menu feather-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-wind"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"></path></svg>
+                            </span>
+                            <span class="menu-text">
+                                UI Kit
+                            </span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="modal.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        Modal
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tab.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        Tabs
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="carousal.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        Carousal
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="counter.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        Counter
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="accordation.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        Accordation
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="pagination.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        Pagination
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="typography.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        Typograpgy
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <span class="icon-menu feather-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-send"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                            </span>
+                            <span class="menu-text">
+                                Form
+                            </span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="form.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        Basic Form
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tags.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        Tags
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <span class="icon-menu feather-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tablet"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                            </span>
+                            <span class="menu-text">
+                                Table
+                            </span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="basic-table.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        Basic Table
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="advance-table.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        Advance Table
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="data-table.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        Data Table
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <span class="icon-menu feather-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon><line x1="8" y1="2" x2="8" y2="18"></line><line x1="16" y1="6" x2="16" y2="22"></line></svg>
+                            </span>
+                            <span class="menu-text">
+                                Map
+                            </span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="g-map.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        Google Map
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="v-map.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        vector Map
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="chart.html">
+                            <span class="icon-menu feather-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pie-chart"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg>
+                            </span>
+                            <span class="menu-text">
+                                Chart
+                            </span>
+                        </a>
+                    </li>
+					 <li>
+                        <a href="buttons.html">
+                            <span class="icon-menu feather-icon">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-cloud"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+                            </span>
+                            <span class="menu-text">
+                                buttons
+                            </span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="invoice.html">
+                            <span class="icon-menu feather-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-printer"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+                            </span>
+                            <span class="menu-text">
+                                Invoice
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <span class="icon-menu feather-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </span>
+                            <span class="menu-text">
+                                Email
+                            </span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="inbox.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        Inbox
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="email-template.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        Email Template
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="chat.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        Chat
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <a href="javascript:void(0);">
+                            <span class="icon-menu feather-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-octagon"><polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                            </span>
+                            <span class="menu-text">
+                                Authentication
+                            </span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="login.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        Login
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="register.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        Register
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="profile.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        My Profile
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="forgot-pws.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        Recover Password
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active-li">
+                        <a href="javascript:void(0);">
+                            <span class="icon-menu feather-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                            </span>
+                            <span class="menu-text">
+                                General
+                            </span>
+                        </a>
+                        <ul class="sub-menu show-submenu">
+                            <li>
+                                <a href="blank.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        Starter
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="shop.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        Shop
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="product-single.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        Product Single
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="wishlist.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        Wishlist
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="cart.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        Cart
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="checkout.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        Checkout
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="faq.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        Faq
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="error.html">
+                                    <span class="icon-dash">
+                                    </span>
+                                    <span class="menu-text">
+                                        Error 404
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <a href="support.html">
+                            <span class="icon-menu feather-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-voicemail"><circle cx="5.5" cy="11.5" r="4.5"></circle><circle cx="18.5" cy="11.5" r="4.5"></circle><line x1="5.5" y1="16" x2="18.5" y2="16"></line></svg>
+                            </span>
+                            <span class="menu-text">
+                                Support
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="documentation.html">
+                            <span class="icon-menu feather-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-paperclip"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path></svg>
+                            </span>
+                            <span class="menu-text">
+                                Documentation
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <!-- Container Start -->
+        <div class="page-wrapper">
+            <div class="main-content">
+                <!-- Page Title Start -->
+                <div class="row">
+                    <div class="colxl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="page-title-wrapper">
+                            <div class="page-title-box">
+                                <h4 class="page-title bold">Dashboard</h4>
+                            </div>
+                            <div class="breadcrumb-list">
+                                <ul>
+                                    <li class="breadcrumb-link">
+                                        <a href="javascript:void(0);"><i class="fas fa-home mr-2"></i>Dashboard</a>
+                                    </li>
+                                    <li class="breadcrumb-link active">Admin</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dashboard Start -->
+                <div class="row">
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <!-- Start Card-->
+                        <div class="card ad-info-card">
+                            <div class="card-body dd-flex align-items-center">
+                                <div class="icon-info">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512.126 512.126" xml:space="preserve">
+                                        <g transform="translate(0 -1)">
+                                            <g>
+                                                <g>
+                                                    <path d="M13.88,171.793h117.986c1.201,2.614,2.547,5.16,4.031,7.625l-0.009,4.175l-22.567,11.587
+                                                        c-11.796,5.875-19.293,17.877-19.4,31.054v8.875c0.104,7.537,6.288,13.568,13.825,13.484h125.95
+                                                        c7.537,0.085,13.721-5.946,13.825-13.483v-8.875c-0.108-13.178-7.605-25.18-19.4-31.058l-22.583-11.579v-4.171
+                                                        c1.49-2.466,2.84-5.015,4.042-7.633h117.983c7.537,0.085,13.721-5.946,13.825-13.483v-8.875
+                                                        c-0.107-13.177-7.604-25.179-19.4-31.054v-0.004l-22.583-11.579v-4.196c3.072-5.008,5.558-10.353,7.408-15.929
+                                                        c5.027-3.432,8.109-9.062,8.292-15.146V60.689c-0.089-4.571-1.961-8.927-5.217-12.138l-0.025-8.554
+                                                        c0.722-9.479-2.508-18.835-8.925-25.85c-9.739-9.271-22.94-13.999-36.35-13.021c-13.434-0.976-26.655,3.772-36.4,13.071
+                                                        c-6.195,6.829-9.377,15.867-8.825,25.071v9.259c-3.309,3.191-5.213,7.566-5.292,12.162v10.837
+                                                        c0.183,6.084,3.265,11.713,8.292,15.146c1.848,5.573,4.331,10.915,7.4,15.921l-0.009,4.2l-13.682,7.024
+                                                        c-0.04-8.48-3.251-16.638-9.002-22.87c-9.739-9.27-22.939-13.999-36.35-13.021c-13.434-0.976-26.655,3.772-36.4,13.071
+                                                        c-5.69,6.256-8.857,14.4-8.889,22.856l-13.761-7.056v-4.196c3.072-5.008,5.558-10.353,7.408-15.929
+                                                        c5.027-3.432,8.109-9.062,8.292-15.146V60.689c-0.09-4.57-1.962-8.924-5.217-12.133l-0.025-8.558
+                                                        c0.723-9.479-2.508-18.836-8.925-25.85c-9.739-9.271-22.94-13.999-36.35-13.021C63.421,0.151,50.2,4.898,40.455,14.197
+                                                        c-6.195,6.831-9.377,15.87-8.825,25.075v9.259c-3.307,3.19-5.211,7.564-5.292,12.158v10.837
+                                                        c0.183,6.084,3.265,11.713,8.292,15.146c1.849,5.573,4.332,10.915,7.4,15.921l-0.009,4.2l-22.567,11.588
+                                                        c-11.796,5.875-19.293,17.877-19.4,31.054v8.875C0.159,165.846,6.343,171.878,13.88,171.793z M241.063,120.151
+                                                        c3.963-2.5,6.193-7.008,5.775-11.675v-8.363c-0.001-1.683-0.499-3.329-1.434-4.729c-3.314-4.994-5.84-10.468-7.491-16.229
+                                                        c-0.555-2.011-1.827-3.749-3.575-4.887c-1.249-0.682-2.339-1.621-3.2-2.754v0.004l-0.075-10.438
+                                                        c0.643-0.803,1.388-1.519,2.217-2.129c1.993-1.622,3.15-4.055,3.15-6.625l-0.025-13.754c-0.366-4.656,1.181-9.259,4.284-12.75
+                                                        c6.584-5.711,15.224-8.469,23.9-7.629c8.668-0.841,17.302,1.912,23.883,7.617c3.252,3.69,4.829,8.563,4.358,13.458v13.058
+                                                        c0,2.57,1.157,5.003,3.15,6.625c1.692,1.371,2.05,1.833,2.058,1.737l0.017,10.696c0,0.009-0.383,1.05-3.217,2.883
+                                                        c-1.748,1.138-3.02,2.876-3.575,4.887c-1.651,5.762-4.178,11.235-7.492,16.229c-0.934,1.4-1.433,3.046-1.434,4.729v8.363
+                                                        c-0.392,4.852,2.04,9.498,6.25,11.942l25.6,13.141c6.094,2.966,10.008,9.1,10.133,15.876v5.292h-104.35
+                                                        c0.843-2.028,1.273-4.204,1.267-6.4v-10.837c0.004-2.221-0.456-4.418-1.35-6.45L241.063,120.151z M139.413,135.743
+                                                        c1.554-1.34,2.563-3.203,2.838-5.236l0.04-0.177c0.121-0.394,0.212-0.796,0.273-1.204l-0.025-13.75
+                                                        c-0.366-4.657,1.18-9.263,4.283-12.755c6.584-5.711,15.224-8.469,23.9-7.629c8.668-0.841,17.302,1.912,23.883,7.617
+                                                        c3.251,3.692,4.829,8.565,4.358,13.462v13.054c0,2.57,1.157,5.003,3.15,6.625c1.692,1.371,2.058,1.829,2.058,1.737l0.017,10.696
+                                                        c0,0.009-0.383,1.05-3.217,2.883c-1.731,1.126-2.995,2.842-3.558,4.829c-0.34,1.328-0.774,2.63-1.3,3.896
+                                                        c-0.052,0.116-0.062,0.241-0.108,0.358c-0.024,0.061-0.078,0.101-0.101,0.163c-1.501,4.139-3.49,8.083-5.925,11.75
+                                                        c-0.983,1.426-1.509,3.118-1.508,4.85v8.363c-0.392,4.852,2.039,9.498,6.25,11.942l25.6,13.138
+                                                        c6.093,2.968,10.008,9.102,10.133,15.878v5.292H110.988v-5.292c0.124-6.776,4.039-12.91,10.133-15.875l26.075-13.408
+                                                        c3.963-2.5,6.193-7.008,5.775-11.675v-8.363c0.001-1.732-0.525-3.424-1.508-4.85c-2.489-3.786-4.525-7.85-6.067-12.11
+                                                        l-0.012-0.029l-0.055-0.132c-0.526-1.266-0.96-2.568-1.3-3.896c-0.566-1.986-1.83-3.7-3.558-4.829
+                                                        c-1.249-0.682-2.339-1.621-3.2-2.754v0.004l-0.083-10.433C137.837,137.08,138.584,136.36,139.413,135.743z M17.122,149.435
+                                                        c0.124-6.776,4.039-12.91,10.133-15.875l26.075-13.408c3.963-2.5,6.193-7.008,5.775-11.675v-8.363
+                                                        c-0.001-1.683-0.499-3.329-1.434-4.729c-3.314-4.994-5.84-10.468-7.492-16.229c-0.555-2.011-1.827-3.749-3.575-4.887
+                                                        c-1.249-0.682-2.339-1.621-3.2-2.754v0.004l-0.083-10.433c0.648-0.805,1.396-1.525,2.225-2.142
+                                                        c1.992-1.619,3.149-4.049,3.15-6.616l-0.025-13.75c-0.366-4.657,1.181-9.262,4.284-12.754c6.584-5.711,15.224-8.469,23.9-7.629
+                                                        c8.668-0.841,17.302,1.912,23.883,7.617c3.251,3.692,4.829,8.565,4.358,13.462v13.054c0.001,2.567,1.158,4.997,3.15,6.617
+                                                        c1.692,1.379,2.067,1.842,2.058,1.746l0.017,10.696c0,0.009-0.383,1.05-3.217,2.883c-1.748,1.138-3.02,2.876-3.575,4.887
+                                                        c-1.651,5.762-4.178,11.235-7.492,16.23c-0.934,1.4-1.433,3.046-1.434,4.729v8.363c-0.392,4.852,2.04,9.498,6.25,11.942
+                                                        l20.763,10.656c-0.92,2.014-1.402,4.2-1.413,6.415v10.837c0.036,2.206,0.514,4.382,1.406,6.4H17.122V149.435z"></path>
+                                                    <path d="M26.422,400.235c1.51-0.001,3.018-0.125,4.508-0.371c55.972-9.13,252.363-56.295,443.986-279.584l11.697,6.639
+                                                        c5.476,3.078,12.2,2.903,17.508-0.456c5.309-3.359,8.346-9.361,7.908-15.627l-4.692-63.371
+                                                        c-0.399-5.686-3.615-10.795-8.57-13.612c-4.955-2.817-10.99-2.969-16.08-0.405l-56.7,28.654
+                                                        c-5.651,2.802-9.287,8.503-9.444,14.809c-0.157,6.306,3.189,12.181,8.694,15.262l8.583,4.873
+                                                        C253.671,295.491,73.423,339.651,21.938,348.477c-12.583,2.109-21.821,12.971-21.883,25.729c0.003,2.12,0.269,4.232,0.792,6.288
+                                                        C3.817,392.172,14.371,400.319,26.422,400.235z M24.855,365.293c53.354-9.143,241.519-55.127,427.17-262.877
+                                                        c1.32-0.706,2.425-1.756,3.197-3.04c2.323-4.099,0.887-9.305-3.209-11.633l-18.367-10.392l56.675-28.663l4.692,63.375
+                                                        l-17.75-10.071c-0.277-0.109-0.561-0.202-0.848-0.279c-3.098-1.393-6.734-0.749-9.164,1.625c-0.245,0.173-0.48,0.359-0.704,0.558
+                                                        C277.23,327.422,83.155,374.052,28.164,383.022c-4.808,0.917-9.51-2.028-10.783-6.754c-0.17-0.674-0.257-1.367-0.259-2.063
+                                                        C17.192,369.75,20.454,365.99,24.855,365.293z"></path>
+                                                    <path d="M76.855,419.26h-51.2c-14.132,0.015-25.585,11.468-25.6,25.6v59.733c-0.001,2.263,0.898,4.434,2.499,6.035
+                                                        c1.6,1.6,3.771,2.499,6.035,2.499h85.333c2.263,0.001,4.434-0.898,6.035-2.499c1.6-1.6,2.499-3.771,2.499-6.035V444.86
+                                                        C102.44,430.728,90.987,419.275,76.855,419.26z M85.388,496.06H17.122v-51.2c0.005-4.711,3.822-8.529,8.533-8.533h51.2
+                                                        c4.711,0.005,8.529,3.822,8.533,8.533V496.06z"></path>
+                                                    <path d="M213.388,385.126h-51.2c-14.132,0.015-25.585,11.468-25.6,25.6v93.867c-0.001,2.263,0.898,4.434,2.499,6.035
+                                                        c1.6,1.6,3.771,2.499,6.035,2.499h85.333c2.263,0.001,4.434-0.898,6.035-2.499c1.6-1.6,2.499-3.771,2.499-6.035v-93.867
+                                                        C238.973,396.594,227.52,385.142,213.388,385.126z M221.922,496.06h-68.267v-85.333c0.005-4.711,3.822-8.529,8.533-8.533h51.2
+                                                        c4.711,0.005,8.529,3.822,8.533,8.533V496.06z"></path>
+                                                    <path d="M349.922,308.326h-51.2c-14.132,0.015-25.585,11.468-25.6,25.6v170.667c-0.001,2.263,0.898,4.434,2.499,6.035
+                                                        c1.6,1.6,3.771,2.499,6.035,2.499h85.333c2.263,0.001,4.434-0.898,6.035-2.499c1.6-1.6,2.499-3.771,2.499-6.035V333.926
+                                                        C375.506,319.794,364.054,308.342,349.922,308.326z M358.455,496.06h-68.267V333.926c0.005-4.711,3.822-8.529,8.533-8.533h51.2
+                                                        c4.711,0.005,8.529,3.823,8.533,8.533V496.06z"></path>
+                                                    <path d="M486.455,205.926h-51.2c-14.132,0.015-25.585,11.468-25.6,25.6v273.067c-0.001,2.263,0.898,4.434,2.499,6.035
+                                                        c1.6,1.6,3.771,2.499,6.035,2.499h85.333c2.263,0.001,4.434-0.898,6.035-2.499c1.6-1.6,2.499-3.771,2.499-6.035V231.526
+                                                        C512.04,217.394,500.587,205.942,486.455,205.926z M494.988,496.06h-68.267V231.526c0.005-4.711,3.822-8.529,8.533-8.533h51.2
+                                                        c4.711,0.005,8.529,3.822,8.533,8.533V496.06z"></path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="icon-info-text">
+                                    <h5 class="ad-title">Happy Customers</h5>
+                                    <h4 class="ad-card-title">66k</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Start Card-->
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card ad-info-card">
+                            <div class="card-body dd-flex align-items-center">
+                                <div class="icon-info">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 64 64"><g id="shopping-smartphone-home-house-hand"><path d="M60.02,25.05a2.971,2.971,0,0,0,1.84-1.54l.21-.41a3.022,3.022,0,0,0-1.14-3.91L33.54,2.76a2.988,2.988,0,0,0-3.08,0L3.07,19.19A3.022,3.022,0,0,0,1.93,23.1l.21.41a2.971,2.971,0,0,0,1.84,1.54,3.045,3.045,0,0,0,.84.12A3.033,3.033,0,0,0,6,24.9V56H5a3,3,0,0,0,0,6H59a3,3,0,0,0,0-6H58V24.91A2.928,2.928,0,0,0,60.02,25.05ZM59,58a1,1,0,0,1,0,2H5a1,1,0,0,1,0-2ZM46,37H56v9H41V29a1,1,0,0,1,2,0v5A3.009,3.009,0,0,0,46,37Zm0-2a1,1,0,0,1-1-1V29a2.98,2.98,0,0,0-4-2.82V23a3.009,3.009,0,0,0-3-3H26a3.009,3.009,0,0,0-3,3v7a3.009,3.009,0,0,0-3,3,2.974,2.974,0,0,0,.78,2,2.954,2.954,0,0,0,0,4,2.954,2.954,0,0,0,0,4A2.974,2.974,0,0,0,20,45a3.009,3.009,0,0,0,3,3v1a3.009,3.009,0,0,0,3,3H38a3.009,3.009,0,0,0,3-3V48H56v8H8V23.76L31.48,9.62a1.02,1.02,0,0,1,1.04,0L56,23.76V35ZM23,36h2a1,1,0,0,1,0,2H23a1,1,0,0,1,0-2Zm-1-3a1,1,0,0,1,1-1h2a1,1,0,0,1,0,2H23A1,1,0,0,1,22,33Zm1,7h2a1,1,0,0,1,0,2H23a1,1,0,0,1,0-2Zm0,4h2a1,1,0,0,1,0,2H23a1,1,0,0,1,0-2Zm2,4a3.009,3.009,0,0,0,3-3h8a1,1,0,0,0,1-1V34a1,1,0,0,0-1-1H35a3.99,3.99,0,0,0-7.58-1.75A2.956,2.956,0,0,0,25,30V23a1,1,0,0,1,1-1H38a1,1,0,0,1,1,1V49a1,1,0,0,1-1,1H26a1,1,0,0,1-1-1Zm2.22-9a2.954,2.954,0,0,0,0-4H35v8H27.22a2.954,2.954,0,0,0,0-4ZM29,33a2,2,0,0,1,4,0ZM33.55,7.91a2.979,2.979,0,0,0-3.1,0L5.34,23.03a1.018,1.018,0,0,1-.8.1.972.972,0,0,1-.61-.51l-.21-.41A1.021,1.021,0,0,1,4.1,20.9L31.49,4.47a1,1,0,0,1,1.02,0L59.9,20.9a1.021,1.021,0,0,1,.38,1.31l-.21.41a.972.972,0,0,1-.61.51,1.018,1.018,0,0,1-.8-.1Z"></path></g></svg>
+                                </div>
+                                <div class="icon-info-text">
+                                    <h5 class="ad-title">Daily Orders</h5>
+                                    <h4 class="ad-card-title">15k</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Start Card-->
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card ad-info-card">
+                            <div class="card-body dd-flex align-items-center">
+                                <div class="icon-info">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 64 64"><g id="hand_&#xB7;_ecommerce_&#xB7;_shopping_&#xB7;_online_&#xB7;_sale" data-name="hand &#xB7; ecommerce &#xB7; shopping &#xB7; online &#xB7; sale"><path d="M61,52H59V23a3.009,3.009,0,0,0-3-3H49V9a1,1,0,0,0-1-1H45a5.992,5.992,0,0,0-8.5-5.45A5.992,5.992,0,0,0,28,8H24a1,1,0,0,0-1,1V20H8a3.009,3.009,0,0,0-3,3V52H3a1,1,0,0,0-1,1v4a5,5,0,0,0,5,5H57a5,5,0,0,0,5-5V53A1,1,0,0,0,61,52ZM45,25V10h2V27a3.009,3.009,0,0,1-3,3H42.89A6.97,6.97,0,0,0,45,25ZM39,4a4,4,0,0,1,4,4H40a6.016,6.016,0,0,0-1.49-3.95A3.87,3.87,0,0,1,39,4Zm-2.5.9A3.976,3.976,0,0,1,38,8H35A3.976,3.976,0,0,1,36.5,4.9ZM34,4a3.87,3.87,0,0,1,.49.05A6.016,6.016,0,0,0,33,8H30A4,4,0,0,1,34,4Zm-9,6h3v2a1,1,0,0,0,0,2h2a1,1,0,0,0,0-2V10h8v2a1,1,0,0,0,0,2h2a1,1,0,0,0,0-2V10h3V25a5,5,0,0,1-5,5H30a5,5,0,0,1-5-5ZM23.08,26A7,7,0,0,0,30,32H44a5,5,0,0,0,5-5V26h4V48H11V46h5a1,1,0,0,0,1-1v-.14l.93.62a2.952,2.952,0,0,0,1.68.52H34.46a2.925,2.925,0,0,0,1.5-.4l13.4-7.73a3.006,3.006,0,0,0,1.1-4.1,3.011,3.011,0,0,0-4.1-1.1l-6.43,3.71A2.993,2.993,0,0,0,37,34H29.3l-.2-.13A10.972,10.972,0,0,0,17,33.8V33a1,1,0,0,0-1-1H11V26ZM11,44V34h4V44Zm20-4h6a2.982,2.982,0,0,0,1.98-.77l8.39-4.83a1.006,1.006,0,0,1,1.49.86.992.992,0,0,1-.5.87L34.95,43.87a.922.922,0,0,1-.49.13H19.61a1.023,1.023,0,0,1-.56-.17L17,42.46V36a.967.967,0,0,0,.55-.17l.46-.3a8.975,8.975,0,0,1,9.98,0l.46.3A.967.967,0,0,0,29,36h8a1,1,0,0,1,.71,1.7.01.01,0,0,0-.01.01A.991.991,0,0,1,37,38H31a1,1,0,0,0,0,2ZM7,23a1,1,0,0,1,1-1H23v2H10a1,1,0,0,0-1,1V49a1,1,0,0,0,1,1H54a1,1,0,0,0,1-1V25a1,1,0,0,0-1-1H49V22h7a1,1,0,0,1,1,1V52H7ZM36,54v1a1,1,0,0,1-1,1H29a1,1,0,0,1-1-1V54Zm24,3a3.009,3.009,0,0,1-3,3H7a3.009,3.009,0,0,1-3-3V54H26v1a3.009,3.009,0,0,0,3,3h6a3.009,3.009,0,0,0,3-3V54H60Z"></path><path d="M29.293,26.707a1,1,0,0,0,1.414,0l8-8a1,1,0,0,0-1.414-1.414l-8,8A1,1,0,0,0,29.293,26.707Z"></path><circle cx="30" cy="20" r="2"></circle><circle cx="38" cy="24" r="2"></circle></g></svg>
+                                </div>
+                                <div class="icon-info-text">
+                                    <h5 class="ad-title">Total Sales</h5>
+                                    <h4 class="ad-card-title">420k</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Start Card-->
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card ad-info-card">
+                            <div class="card-body dd-flex align-items-center">
+                                <div class="icon-info">
+                                    <svg enable-background="new 0 0 64 64" viewbox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><g><path d="m28 60c4.962 0 9-4.038 9-9s-4.038-9-9-9-9 4.038-9 9 4.038 9 9 9zm0-16c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.14-7-7 3.14-7 7-7z"></path><path d="m26 53h-2c0 1.654 1.346 3 3 3v1h2v-1c1.654 0 3-1.346 3-3s-1.346-3-3-3v-2c.551 0 1 .449 1 1h2c0-1.654-1.346-3-3-3v-1h-2v1c-1.654 0-3 1.346-3 3s1.346 3 3 3v2c-.551 0-1-.449-1-1zm0-4c0-.551.449-1 1-1v2c-.551 0-1-.449-1-1zm3 3c.551 0 1 .449 1 1s-.449 1-1 1z"></path><path d="m62 29h-9v-4.08c3.387-.488 6-3.401 6-6.92v-4c0-.552-.448-1-1-1-2.548 0-4.775 1.373-6 3.413-1.225-2.04-3.452-3.413-6-3.413-.552 0-1 .448-1 1v4c0 3.519 2.613 6.432 6 6.92v4.08h-18v-5h3c3.86 0 7-3.14 7-7 0-.552-.448-1-1-1h-4c-1.958 0-3.728.81-5 2.11v-5.169c4.493-.5 8-4.317 8-8.941v-2c0-.552-.448-1-1-1-3.483 0-6.505 1.993-8 4.896-1.495-2.903-4.517-4.896-8-4.896-.552 0-1 .448-1 1v2c0 4.624 3.507 8.441 8 8.941v5.169c-1.272-1.3-3.042-2.11-5-2.11h-4c-.552 0-1 .448-1 1 0 3.86 3.14 7 7 7h3v5h-18v-4.08c3.387-.488 6-3.401 6-6.92v-4c0-.552-.448-1-1-1-2.548 0-4.775 1.373-6 3.413-1.225-2.04-3.452-3.413-6-3.413-.552 0-1 .448-1 1v4c0 3.519 2.613 6.432 6 6.92v4.08h-1c-.552 0-1 .448-1 1v5h-3c-.552 0-1 .448-1 1v3h-3c-.552 0-1 .448-1 1v22c0 .552.448 1 1 1h52c.552 0 1-.448 1-1v-3h3c.552 0 1-.448 1-1v-5h3c.552 0 1-.448 1-1v-22c0-.552-.448-1-1-1zm-5-13.899v2.899c0 2.415-1.721 4.435-4 4.899v-2.899c0-2.415 1.721-4.435 4-4.899zm-10 2.899v-2.899c2.279.464 4 2.485 4 4.899v2.899c-2.279-.464-4-2.484-4-4.899zm-9 0h2.899c-.464 2.279-2.485 4-4.899 4h-2.899c.464-2.279 2.484-4 4.899-4zm-10 4c-2.415 0-4.435-1.721-4.899-4h2.899c2.415 0 4.435 1.721 4.899 4zm11-18.929v.929c0 3.521-2.612 6.442-6 6.929v-.929c0-3.521 2.612-6.442 6-6.929zm-14 .929v-.929c3.388.487 6 3.408 6 6.929v.929c-3.388-.487-6-3.408-6-6.929zm-8 11.101v2.899c0 2.415-1.721 4.435-4 4.899v-2.899c0-2.415 1.721-4.435 4-4.899zm-10 2.899v-2.899c2.279.464 4 2.485 4 4.899v2.899c-2.279-.464-4-2.484-4-4.899zm46 43h-50v-20h50zm4-4h-2v-17c0-.552-.448-1-1-1h-47v-2h50zm4-6h-2v-15c0-.552-.448-1-1-1h-47v-4h50z"></path><path d="m6 59h12v-2h-11v-12h11v-2h-12c-.552 0-1 .448-1 1v14c0 .552.448 1 1 1z"></path><path d="m51 58v-14c0-.552-.448-1-1-1h-12v2h11v12h-11v2h12c.552 0 1-.448 1-1z"></path><path d="m46 54c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1h-6c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1zm-5-4h4v2h-4z"></path><path d="m10 48c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1h6c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1zm5 4h-4v-2h4z"></path></g></svg>
+                                </div>
+                                <div class="icon-info-text">
+                                    <h5 class="ad-title">Total Revenue</h5>
+                                    <h4 class="ad-card-title">10k</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Revanue Status Start -->
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12">
+                        <div class="card chart-card">
+                            <div class="card-header">
+                                <h4 class="has-btn">Total Revanue <span><button type="button" class="btn btn-primary squer-btn sm-btn">Download</button></span></h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-xl-8 col-lg-12 col-md-12">
+                                        <div class="chart-holder">
+                                            <div id="chartD"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-12 col-md-12">
+                                        <div class="revenue-wrapper">
+                                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" id="tab1-tab" data-toggle="pill" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Weekly</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="tab2-tab" data-toggle="pill" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Monthly</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="tab3-tab" data-toggle="pill" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">Yearly</a>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content" id="pills-tabContent">
+                                                <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+                                                    <div class="revenue-info-wrap">
+                                                        <table>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td><i class="far fa-chart-bar mr-2 icon-only"></i>Total Sales</td>
+                                                                    <td>5995<sup class="medium ml-2 txt-green">+15%</sup></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><i class="fas fa-user-friends mr-2 icon-only"></i>Total Customers</td>
+                                                                    <td>5894<sup class="medium ml-2 txt-green">+15%</sup></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><i class="fas fa-hand-holding-usd mr-2 icon-only"></i>Total Income</td>
+                                                                    <td>4453<sup class="medium ml-2 txt-green">+25%</sup></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><i class="fas fa-signal mr-2 icon-only"></i>Total Expense</td>
+                                                                    <td>7454<sup class="medium ml-2 txt-red">+2%</sup></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><i class="far fa-heart mr-2 icon-only"></i>Total Likes</td>
+                                                                    <td>14454<sup class="medium ml-2 txt-red">+5%</sup></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><i class="far fa-frown-open mr-2 icon-only"></i>Tax Paid</td>
+                                                                    <td>786<sup class="medium ml-2 txt-green">+5%</sup></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+                                                    <div class="revenue-info-wrap">
+                                                        <table>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td><i class="far fa-chart-bar mr-2 icon-only"></i>Total Sales</td>
+                                                                    <td>5995<sup class="medium ml-2 txt-green">+15%</sup></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><i class="fas fa-user-friends mr-2 icon-only"></i>Total Customers</td>
+                                                                    <td>5894<sup class="medium ml-2 txt-green">+15%</sup></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><i class="fas fa-hand-holding-usd mr-2 icon-only"></i>Total Income</td>
+                                                                    <td>4453<sup class="medium ml-2 txt-green">+25%</sup></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><i class="fas fa-signal mr-2 icon-only"></i>Total Expense</td>
+                                                                    <td>7454<sup class="medium ml-2 txt-red">+2%</sup></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><i class="far fa-heart mr-2 icon-only"></i>Total Likes</td>
+                                                                    <td>14454<sup class="medium ml-2 txt-red">+5%</sup></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><i class="far fa-frown-open mr-2 icon-only"></i>Tax Paid</td>
+                                                                    <td>786<sup class="medium ml-2 txt-green">+5%</sup></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
+                                                    <div class="revenue-info-wrap">
+                                                        <table>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td><i class="far fa-chart-bar mr-2 icon-only"></i>Total Sales</td>
+                                                                    <td>5995<sup class="medium ml-2 txt-green">+15%</sup></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><i class="fas fa-user-friends mr-2 icon-only"></i>Total Customers</td>
+                                                                    <td>5894<sup class="medium ml-2 txt-green">+15%</sup></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><i class="fas fa-hand-holding-usd mr-2 icon-only"></i>Total Income</td>
+                                                                    <td>4453<sup class="medium ml-2 txt-green">+25%</sup></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><i class="fas fa-signal mr-2 icon-only"></i>Total Expense</td>
+                                                                    <td>7454<sup class="medium ml-2 txt-red">+2%</sup></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><i class="far fa-heart mr-2 icon-only"></i>Total Likes</td>
+                                                                    <td>14454<sup class="medium ml-2 txt-red">+5%</sup></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><i class="far fa-frown-open mr-2 icon-only"></i>Tax Paid</td>
+                                                                    <td>786<sup class="medium ml-2 txt-green">+5%</sup></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Products Orders Start -->
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="card chart-card">
+                            <div class="card-header">
+                                <h4>Newest Orders</h4>
+                            </div>
+                            <div class="card-body pb-4">
+                                <div class="chart-holder">
+                                    <div class="table-responsive">
+                                        <table class="table table-styled mb-0">
+                                            <thead>
+                                                <tr>
+                                                    <th>
+														<div class="checkbox">
+															<input id="checkbox1" type="checkbox">
+															<label for="checkbox1"></label>
+														</div>
+													</th>
+                                                    <th>Order ID</th>
+                                                    <th>Billing Name</th>
+                                                    <th>Date</th>
+                                                    <th>Total</th>
+                                                    <th>Payment Status</th>
+                                                    <th>Payment Method</th>
+													<th>View Details</th>
+													<th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+														<div class="checkbox">
+															<input id="checkbox2" type="checkbox">
+															<label for="checkbox2"></label>
+														</div>
+													</td>
+                                                    <td>#JH2033</td>
+                                                    <td>
+                                                        <span class="img-thumb ">
+                                                            <img src="static/picture/1.jpg" alt=" ">
+                                                            <span class="ml-2 ">Emily Arnold</span>
+                                                        </span>
+                                                    </td>
+                                                    <td>22/06/2021</td>
+                                                    <td>$600</td>
+													<td>
+                                                        <label class="mb-0 badge badge-primary" title="" data-original-title="Pending">Pending</label>
+                                                    </td>
+                                                    <td>
+                                                        <span class="img-thumb">
+                                                            <i class="fab fa-cc-paypal"></i>
+                                                            <span class="ml-2">Paypal</span>
+                                                        </span>
+                                                    </td>
+                                                    <td>
+														<label class="mb-0 badge badge-primary" title="" data-original-title="Pending">View Detail</label>
+													</td>
+                                                    <td class="relative">
+                                                        <a class="action-btn " href="javascript:void(0); ">
+                                                            <svg class="default-size " viewbox="0 0 341.333 341.333 ">
+                                                                <g>
+                                                                    <g>
+                                                                        <g>
+                                                                            <path d="M170.667,85.333c23.573,0,42.667-19.093,42.667-42.667C213.333,19.093,194.24,0,170.667,0S128,19.093,128,42.667 C128,66.24,147.093,85.333,170.667,85.333z "></path>
+                                                                            <path d="M170.667,128C147.093,128,128,147.093,128,170.667s19.093,42.667,42.667,42.667s42.667-19.093,42.667-42.667 S194.24,128,170.667,128z "></path>
+                                                                            <path d="M170.667,256C147.093,256,128,275.093,128,298.667c0,23.573,19.093,42.667,42.667,42.667s42.667-19.093,42.667-42.667 C213.333,275.093,194.24,256,170.667,256z "></path>
+                                                                        </g>
+                                                                    </g>
+                                                                </g>
+                                                            </svg>
+                                                        </a>
+                                                        <div class="action-option ">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="javascript:void(0); "><i class="far fa-edit mr-2 "></i>Edit</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0); "><i class="far fa-trash-alt mr-2 "></i>Delete</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+														<div class="checkbox">
+															<input id="checkbox3" type="checkbox">
+															<label for="checkbox3"></label>
+														</div>
+													</td>
+                                                    <td>#MK4433</td>
+                                                    <td>
+                                                        <span class="img-thumb ">
+                                                            <img src="static/picture/4.jpg" alt=" ">
+                                                            <span class="ml-2 ">Mark Doe</span>
+                                                        </span>
+                                                    </td>
+                                                    <td>14/07/2021</td>
+                                                    <td>$700</td>
+													<td>
+                                                        <label class="mb-0 badge badge-success" title="" data-original-title="Pending">Success</label>
+                                                    </td>
+                                                    <td>
+                                                        <span class="img-thumb">
+                                                            <i class="fab fa-cc-visa"></i>
+                                                            <span class="ml-2">Visa</span>
+                                                        </span>
+                                                    </td>
+                                                    <td>
+														<label class="mb-0 badge badge-primary" title="" data-original-title="Pending">View Detail</label>
+													</td>
+                                                    <td class="relative">
+                                                        <a class="action-btn " href="javascript:void(0); ">
+                                                            <svg class="default-size " viewbox="0 0 341.333 341.333 ">
+                                                                <g>
+                                                                    <g>
+                                                                        <g>
+                                                                            <path d="M170.667,85.333c23.573,0,42.667-19.093,42.667-42.667C213.333,19.093,194.24,0,170.667,0S128,19.093,128,42.667 C128,66.24,147.093,85.333,170.667,85.333z "></path>
+                                                                            <path d="M170.667,128C147.093,128,128,147.093,128,170.667s19.093,42.667,42.667,42.667s42.667-19.093,42.667-42.667 S194.24,128,170.667,128z "></path>
+                                                                            <path d="M170.667,256C147.093,256,128,275.093,128,298.667c0,23.573,19.093,42.667,42.667,42.667s42.667-19.093,42.667-42.667 C213.333,275.093,194.24,256,170.667,256z "></path>
+                                                                        </g>
+                                                                    </g>
+                                                                </g>
+                                                            </svg>
+                                                        </a>
+                                                        <div class="action-option">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="javascript:void(0);"><i class="far fa-edit mr-2 "></i>Edit</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);"><i class="far fa-trash-alt mr-2 "></i>Delete</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+												<tr>
+                                                    <td>
+														<div class="checkbox">
+															<input id="checkbox4" type="checkbox">
+															<label for="checkbox4"></label>
+														</div>
+													</td>
+                                                    <td>#MD4578</td>
+                                                    <td>
+                                                        <span class="img-thumb">
+                                                            <img src="static/picture/7.jpg" alt=" ">
+                                                            <span class="ml-2 ">Mark Smith</span>
+                                                        </span>
+                                                    </td>
+                                                    <td>28/08/2021</td>
+                                                    <td>$800</td>
+													<td>
+                                                        <label class="mb-0 badge badge-danger" title="" data-original-title="Pending">Cancel</label>
+                                                    </td>
+                                                    <td>
+                                                        <span class="img-thumb">
+                                                            <i class="fas fa-credit-card"></i>
+                                                            <span class="ml-2">Credit Card</span>
+                                                        </span>
+                                                    </td>
+                                                    <td>
+														<label class="mb-0 badge badge-primary" title="" data-original-title="Pending">View Detail</label>
+													</td>
+                                                    <td class="relative">
+                                                        <a class="action-btn " href="javascript:void(0); ">
+                                                            <svg class="default-size " viewbox="0 0 341.333 341.333 ">
+                                                                <g>
+                                                                    <g>
+                                                                        <g>
+                                                                            <path d="M170.667,85.333c23.573,0,42.667-19.093,42.667-42.667C213.333,19.093,194.24,0,170.667,0S128,19.093,128,42.667 C128,66.24,147.093,85.333,170.667,85.333z "></path>
+                                                                            <path d="M170.667,128C147.093,128,128,147.093,128,170.667s19.093,42.667,42.667,42.667s42.667-19.093,42.667-42.667 S194.24,128,170.667,128z "></path>
+                                                                            <path d="M170.667,256C147.093,256,128,275.093,128,298.667c0,23.573,19.093,42.667,42.667,42.667s42.667-19.093,42.667-42.667 C213.333,275.093,194.24,256,170.667,256z "></path>
+                                                                        </g>
+                                                                    </g>
+                                                                </g>
+                                                            </svg>
+                                                        </a>
+                                                        <div class="action-option ">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="javascript:void(0); "><i class="far fa-edit mr-2 "></i>Edit</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0); "><i class="far fa-trash-alt mr-2 "></i>Delete</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+												<tr>
+                                                    <td>
+														<div class="checkbox">
+															<input id="checkbox5" type="checkbox">
+															<label for="checkbox5"></label>
+														</div>
+													</td>
+                                                    <td>#DD1048</td>
+                                                    <td>
+                                                        <span class="img-thumb ">
+                                                            <img src="static/picture/1.jpg" alt=" ">
+                                                            <span class="ml-2 ">Mike Wood</span>
+                                                        </span>
+                                                    </td>
+                                                    <td>13/04/2021</td>
+                                                    <td>$880</td>
+													<td>
+                                                        <label class="mb-0 badge badge-primary" title="" data-original-title="Pending">Pending</label>
+                                                    </td>
+                                                    <td>
+                                                        <span class="img-thumb">
+                                                            <i class="fab fa-cc-mastercard"></i>
+                                                            <span class="ml-2">Mastercard</span>
+                                                        </span>
+                                                    </td>
+                                                    <td>
+														<label class="mb-0 badge badge-primary" title="" data-original-title="Pending">View Detail</label>
+													</td>
+                                                    <td class="relative">
+                                                        <a class="action-btn " href="javascript:void(0); ">
+                                                            <svg class="default-size " viewbox="0 0 341.333 341.333 ">
+                                                                <g>
+                                                                    <g>
+                                                                        <g>
+                                                                            <path d="M170.667,85.333c23.573,0,42.667-19.093,42.667-42.667C213.333,19.093,194.24,0,170.667,0S128,19.093,128,42.667 C128,66.24,147.093,85.333,170.667,85.333z "></path>
+                                                                            <path d="M170.667,128C147.093,128,128,147.093,128,170.667s19.093,42.667,42.667,42.667s42.667-19.093,42.667-42.667 S194.24,128,170.667,128z "></path>
+                                                                            <path d="M170.667,256C147.093,256,128,275.093,128,298.667c0,23.573,19.093,42.667,42.667,42.667s42.667-19.093,42.667-42.667 C213.333,275.093,194.24,256,170.667,256z "></path>
+                                                                        </g>
+                                                                    </g>
+                                                                </g>
+                                                            </svg>
+                                                        </a>
+                                                        <div class="action-option ">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="javascript:void(0); "><i class="far fa-edit mr-2 "></i>Edit</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0); "><i class="far fa-trash-alt mr-2 "></i>Delete</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+												<tr>
+                                                    <td>
+														<div class="checkbox">
+															<input id="checkbox6" type="checkbox">
+															<label for="checkbox6"></label>
+														</div>
+													</td>
+                                                    <td>#JH2033</td>
+                                                    <td>
+                                                        <span class="img-thumb ">
+                                                            <img src="static/picture/3.jpg" alt=" ">
+                                                            <span class="ml-2 ">Emily Arnold</span>
+                                                        </span>
+                                                    </td>
+                                                    <td>22/06/2021</td>
+                                                    <td>$600</td>
+													<td>
+                                                        <label class="mb-0 badge badge-success" title="" data-original-title="Pending">Success</label>
+                                                    </td>
+                                                    <td>
+                                                        <span class="img-thumb">
+                                                            <i class="fab fa-cc-paypal"></i>
+                                                            <span class="ml-2">Paypal</span>
+                                                        </span>
+                                                    </td>
+                                                    <td>
+														<label class="mb-0 badge badge-primary" title="" data-original-title="Pending">View Detail</label>
+													</td>
+                                                    <td class="relative">
+                                                        <a class="action-btn " href="javascript:void(0); ">
+                                                            <svg class="default-size " viewbox="0 0 341.333 341.333 ">
+                                                                <g>
+                                                                    <g>
+                                                                        <g>
+                                                                            <path d="M170.667,85.333c23.573,0,42.667-19.093,42.667-42.667C213.333,19.093,194.24,0,170.667,0S128,19.093,128,42.667 C128,66.24,147.093,85.333,170.667,85.333z "></path>
+                                                                            <path d="M170.667,128C147.093,128,128,147.093,128,170.667s19.093,42.667,42.667,42.667s42.667-19.093,42.667-42.667 S194.24,128,170.667,128z "></path>
+                                                                            <path d="M170.667,256C147.093,256,128,275.093,128,298.667c0,23.573,19.093,42.667,42.667,42.667s42.667-19.093,42.667-42.667 C213.333,275.093,194.24,256,170.667,256z "></path>
+                                                                        </g>
+                                                                    </g>
+                                                                </g>
+                                                            </svg>
+                                                        </a>
+                                                        <div class="action-option ">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="javascript:void(0); "><i class="far fa-edit mr-2 "></i>Edit</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0); "><i class="far fa-trash-alt mr-2 "></i>Delete</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+														<div class="checkbox">
+															<input id="checkbox7" type="checkbox">
+															<label for="checkbox7"></label>
+														</div>
+													</td>
+                                                    <td>#MK4433</td>
+                                                    <td>
+                                                        <span class="img-thumb ">
+                                                            <img src="static/picture/1.jpg" alt=" ">
+                                                            <span class="ml-2 ">John Doe</span>
+                                                        </span>
+                                                    </td>
+                                                    <td>14/07/2021</td>
+                                                    <td>$700</td>
+													<td>
+                                                        <label class="mb-0 badge badge-danger" title="" data-original-title="Pending">Cancel</label>
+                                                    </td>
+                                                    <td>
+                                                        <span class="img-thumb">
+                                                            <i class="fab fa-cc-visa"></i>
+                                                            <span class="ml-2">Visa</span>
+                                                        </span>
+                                                    </td>
+                                                    <td>
+														<label class="mb-0 badge badge-primary" title="" data-original-title="Pending">View Detail</label>
+													</td>
+                                                    <td class="relative">
+                                                        <a class="action-btn " href="javascript:void(0); ">
+                                                            <svg class="default-size " viewbox="0 0 341.333 341.333 ">
+                                                                <g>
+                                                                    <g>
+                                                                        <g>
+                                                                            <path d="M170.667,85.333c23.573,0,42.667-19.093,42.667-42.667C213.333,19.093,194.24,0,170.667,0S128,19.093,128,42.667 C128,66.24,147.093,85.333,170.667,85.333z "></path>
+                                                                            <path d="M170.667,128C147.093,128,128,147.093,128,170.667s19.093,42.667,42.667,42.667s42.667-19.093,42.667-42.667 S194.24,128,170.667,128z "></path>
+                                                                            <path d="M170.667,256C147.093,256,128,275.093,128,298.667c0,23.573,19.093,42.667,42.667,42.667s42.667-19.093,42.667-42.667 C213.333,275.093,194.24,256,170.667,256z "></path>
+                                                                        </g>
+                                                                    </g>
+                                                                </g>
+                                                            </svg>
+                                                        </a>
+                                                        <div class="action-option ">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="javascript:void(0); "><i class="far fa-edit mr-2 "></i>Edit</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0); "><i class="far fa-trash-alt mr-2 "></i>Delete</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+												<tr>
+                                                    <td>
+														<div class="checkbox">
+															<input id="checkbox8" type="checkbox">
+															<label for="checkbox8"></label>
+														</div>
+													</td>
+                                                    <td>#MD4578</td>
+                                                    <td>
+                                                        <span class="img-thumb ">
+                                                            <img src="static/picture/7.jpg" alt=" ">
+                                                            <span class="ml-2 ">Mark Smith</span>
+                                                        </span>
+                                                    </td>
+                                                    <td>28/08/2021</td>
+                                                    <td>$800</td>
+													<td>
+                                                        <label class="mb-0 badge badge-success" title="" data-original-title="Pending">Success</label>
+                                                    </td>
+                                                    <td>
+                                                        <span class="img-thumb">
+                                                            <i class="fas fa-credit-card"></i>
+                                                            <span class="ml-2">Credit Card</span>
+                                                        </span>
+                                                    </td>
+                                                    <td>
+														<label class="mb-0 badge badge-primary" title="" data-original-title="Pending">View Detail</label>
+													</td>
+                                                    <td class="relative">
+                                                        <a class="action-btn " href="javascript:void(0); ">
+                                                            <svg class="default-size " viewbox="0 0 341.333 341.333 ">
+                                                                <g>
+                                                                    <g>
+                                                                        <g>
+                                                                            <path d="M170.667,85.333c23.573,0,42.667-19.093,42.667-42.667C213.333,19.093,194.24,0,170.667,0S128,19.093,128,42.667 C128,66.24,147.093,85.333,170.667,85.333z "></path>
+                                                                            <path d="M170.667,128C147.093,128,128,147.093,128,170.667s19.093,42.667,42.667,42.667s42.667-19.093,42.667-42.667 S194.24,128,170.667,128z "></path>
+                                                                            <path d="M170.667,256C147.093,256,128,275.093,128,298.667c0,23.573,19.093,42.667,42.667,42.667s42.667-19.093,42.667-42.667 C213.333,275.093,194.24,256,170.667,256z "></path>
+                                                                        </g>
+                                                                    </g>
+                                                                </g>
+                                                            </svg>
+                                                        </a>
+                                                        <div class="action-option ">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="javascript:void(0); "><i class="far fa-edit mr-2 "></i>Edit</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0); "><i class="far fa-trash-alt mr-2 "></i>Delete</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+												<tr>
+                                                    <td>
+														<div class="checkbox">
+															<input id="checkbox9" type="checkbox">
+															<label for="checkbox9"></label>
+														</div>
+													</td>
+                                                    <td>#DD1048</td>
+                                                    <td>
+                                                        <span class="img-thumb ">
+                                                            <img src="static/picture/4.jpg" alt=" ">
+                                                            <span class="ml-2 ">Mike Wood</span>
+                                                        </span>
+                                                    </td>
+                                                    <td>13/04/2021</td>
+                                                    <td>$880</td>
+													<td>
+                                                        <label class="mb-0 badge badge-primary" title="" data-original-title="Pending">Pending</label>
+                                                    </td>
+                                                    <td>
+                                                        <span class="img-thumb">
+                                                            <i class="fab fa-cc-mastercard"></i>
+                                                            <span class="ml-2">Mastercard</span>
+                                                        </span>
+                                                    </td>
+                                                    <td>
+														<label class="mb-0 badge badge-primary" title="" data-original-title="Pending">View Detail</label>
+													</td>
+                                                    <td class="relative">
+                                                        <a class="action-btn " href="javascript:void(0); ">
+                                                            <svg class="default-size " viewbox="0 0 341.333 341.333 ">
+                                                                <g>
+                                                                    <g>
+                                                                        <g>
+                                                                            <path d="M170.667,85.333c23.573,0,42.667-19.093,42.667-42.667C213.333,19.093,194.24,0,170.667,0S128,19.093,128,42.667 C128,66.24,147.093,85.333,170.667,85.333z "></path>
+                                                                            <path d="M170.667,128C147.093,128,128,147.093,128,170.667s19.093,42.667,42.667,42.667s42.667-19.093,42.667-42.667 S194.24,128,170.667,128z "></path>
+                                                                            <path d="M170.667,256C147.093,256,128,275.093,128,298.667c0,23.573,19.093,42.667,42.667,42.667s42.667-19.093,42.667-42.667 C213.333,275.093,194.24,256,170.667,256z "></path>
+                                                                        </g>
+                                                                    </g>
+                                                                </g>
+                                                            </svg>
+                                                        </a>
+                                                        <div class="action-option ">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="javascript:void(0); "><i class="far fa-edit mr-2 "></i>Edit</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0); "><i class="far fa-trash-alt mr-2 "></i>Delete</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				<div class="ad-footer-btm">
+					<p>Copyright &copy; 2021.Company name All rights reserved.<a target="_blank" href="https://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+				</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Slide Setting Box -->
+   <div class="slide-setting-box">
+        <div class="slide-setting-holder">
+            <div class="setting-box-head">
+                <h4>General Settings</h4>
+                <a href="javascript:void(0);" class="close-btn">Close</a>
+            </div>
+            <div class="setting-box-body">
+				<div class="p-4"> 
+					<div class="switch-settings">
+						<div class="d-flex mb-3">
+							<span class="mr-auto fs-15">Notifications</span>
+							<div class="checkbox checkbox-toggle">
+								<input id="checkbox55" type="checkbox">
+								<label for="checkbox55"></label>
+							</div>
+						</div>
+						<div class="d-flex mb-3">
+							<span class="mr-auto fs-15">Show your emails</span>
+							<div class="checkbox checkbox-toggle">
+								<input id="checkbox56" type="checkbox">
+								<label for="checkbox56"></label>
+							</div> 
+						</div>
+						<div class="d-flex mb-3">
+							<span class="mr-auto fs-15">Show Task statistics</span>
+							<div class="checkbox checkbox-toggle">
+								<input id="checkbox57" type="checkbox">
+								<label for="checkbox57"></label>
+							</div> 
+						</div>
+						<div class="d-flex mb-3">
+							<span class="mr-auto fs-15">Show recent activity</span>
+							<div class="checkbox checkbox-toggle">
+								<input id="checkbox58" type="checkbox">
+								<label for="checkbox58"></label>
+							</div>
+						</div>
+						<div class="d-flex mb-3">
+							<span class="mr-auto fs-15">System Logs</span>
+							<div class="checkbox checkbox-toggle">
+								<input id="checkbox59" type="checkbox">
+								<label for="checkbox59"></label>
+							</div> 
+						</div>
+						<div class="d-flex mb-3">
+							<span class="mr-auto fs-15">Error Reporting</span>
+							<div class="checkbox checkbox-toggle">
+								<input id="checkbox60" type="checkbox">
+								<label for="checkbox60"></label>
+							</div> 
+						</div>
+						<div class="d-flex mb-3">
+							<span class="mr-auto fs-15">Show your status to all</span>
+							<div class="checkbox checkbox-toggle">
+								<input id="checkbox61" type="checkbox">
+								<label for="checkbox61"></label>
+							</div> 
+						</div>
+						<div class="d-flex">
+							<span class="mr-auto fs-15">Keep up to date</span>
+							<div class="checkbox checkbox-toggle">
+								<input id="checkbox62" type="checkbox">
+								<label for="checkbox62"></label>
+							</div> 
+						</div>
+					</div> 
+				</div>
+            </div>
+			<div class="p-3 border-top border-bottom">
+				<h5 class="border-bottom-0 mb-0">Overview</h5> 
+			</div>
+			<div class="p-4"> 
+				<div class="progress-wrapper">
+					<div class="mb-3"> 
+						<p class="mb-2">Achieves<span class="float-right text-muted font-weight-normal">95%</span></p>
+						<div class="progress h-1"> 
+							<div class="progress-bar bg-primary col-3" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+						</div> 
+					</div>
+				</div> 
+				<div class="progress-wrapper pt-2">
+					<div class="mb-3"> 
+						<p class="mb-2">Projects<span class="float-right text-muted font-weight-normal">65%</span></p>
+						<div class="progress">
+							<div class="progress-bar bg-secondary col-3" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+						</div> 
+					</div>
+				</div> 
+				<div class="progress-wrapper pt-2">
+					<div class="mb-3">
+						<p class="mb-2">Earnings<span class="float-right text-muted font-weight-normal">55%</span></p>
+						<div class="progress">
+							<div class="progress-bar bg-success col-8" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+				</div>
+				<div class="progress-wrapper pt-2"> 
+					<div class="mb-3"> 
+						<p class="mb-2">Balance<span class="float-right text-muted font-weight-normal">50%</span></p>
+						<div class="progress h-1"> 
+							<div class="progress-bar bg-warning w-50 " role="progressbar"></div>
+						</div>
+					</div>
+				</div>
+				<div class="progress-wrapper pt-2">
+					<div class="mb-3"> 
+						<p class="mb-2">Total Profits<span class="float-right text-muted font-weight-normal">80%</span></p>
+						<div class="progress">
+							<div class="progress-bar bg-info col-6" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+				</div>
+				<div class="progress-wrapper pt-2">
+					<div class="mb-3"> 
+						<p class="mb-2">Total Likes<span class="float-right text-muted font-weight-normal">75%</span></p>
+						<div class="progress h-1">
+							<div class="progress-bar bg-teal w-75" role="progressbar"></div> 
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
+
+    <!-- Color Setting -->
+	<div id="style-switcher">
+		<div>
+			<ul class="colors">
+				<li>
+					<p class='colorchange' id='color'>
+					</p>
+				</li>
+				<li>
+					<p class='colorchange' id='color2'>
+					</p>
+				</li>
+				<li>
+					<p class='colorchange' id='color3'>
+					</p>
+				</li>
+				<li>
+					<p class='colorchange' id='color4'>
+					</p>
+				</li>
+				<li>
+					<p class='colorchange' id='color5'>
+					</p>
+				</li>
+				<li>
+					<p class='colorchange' id='style'>
+					</p>
+				</li>
+			</ul>
+		</div>
+		<div class="bottom">
+			<a href="" class="settings">
+				<i class="fa fa-cog" aria-hidden="true"></i>
+			</a>
+		</div>
+	</div>
+    <!-- Color Setting -->
+	
+	
+    <!-- Script Start -->
+	<script src="static/js/jquery.min.js"></script>
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+	<script src="static/js/swiper.min.js"></script>
+    <script src="static/js/apexcharts.min.js"></script>
+    <script src="static/js/control-chart-apexcharts.js"></script>
+	<!-- Page Specific -->
+    <script src="static/js/nice-select.min.js"></script>
+    <!-- Custom Script -->
+    <script src="static/js/custom.js"></script>
+</body>
+
+</html>
